@@ -26,10 +26,7 @@ export default defineConfig({
 
     ['list'],
 
-    ['html', {
-      outputFolder: 'playwright-report',
-      open: 'never'
- }],
+    ['html'],
 
     ['junit',
       {
