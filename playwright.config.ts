@@ -30,7 +30,7 @@ export default defineConfig({
 
     ['junit',
       {
-        outputFile: 'DumbCharadTest/results.xml'
+        outputFile: 'JUnitReport/results.xml'
       }]
 
   ],
