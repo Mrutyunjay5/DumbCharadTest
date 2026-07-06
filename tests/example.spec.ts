@@ -5,7 +5,7 @@ test('Verify title', async ({ page }) => {
   let titleElement = page.locator("//h1[@id='mainTitle']").first()
 
   let title = await titleElement.textContent();
-  expect(title).toBe("🎭 DUMB CHARADES 13 🎭")
+  expect(title).toBe("🎭 DUMB CHARADES 🎭")
 
 });
 
