@@ -26,11 +26,14 @@ export default defineConfig({
 
     ['list'],
 
-    ['html'],
+    ['html', {
+      outputFolder: 'playwright-report',
+      open: 'never'
+ }],
 
     ['junit',
       {
-        outputFile: 'results.xml'
+        outputFile: 'DumbCharadTest/results.xml'
       }]
 
   ],
