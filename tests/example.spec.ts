@@ -26,9 +26,9 @@ test('Verify timer minute can be increased', async ({ page }) => {
 test('Verify if reset button work', async ({ page }) => {
   await page.goto('http://localhost:8000/');
 
-  
-   await page.locator("//button[@id='resetBtn']").first().click()
- let timerCount = page.locator("//div[@id='timerValue']").first()
+
+  await page.locator("//button[@id='resetBtn']").first().click()
+  let timerCount = page.locator("//div[@id='timerValue']").first()
 
   let count = await timerCount.textContent();
 
@@ -36,4 +36,11 @@ test('Verify if reset button work', async ({ page }) => {
 
 
 });
+test('Verify title 2', async ({ page }) => {
+  await page.goto('http://localhost:8000/');
+  let titleElement = page.locator("//h1[@id='mainTitle']").first()
 
+  let title = await titleElement.textContent();
+  expect(title).toBe("🎭 DUMB CHARADES 🎭")
+
+});
